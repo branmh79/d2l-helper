@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Brightspace Helper Options</title>
+    <style>
+      body { font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif; padding: 16px; }
+      .row { margin-bottom: 12px; }
+      label { display: flex; align-items: center; gap: 8px; }
+      input[type="number"] { width: 70px; }
+    </style>
+  </head>
+  <body>
+    <h1>Options</h1>
+    <div class="row">
+      <label>
+        <input type="checkbox" id="enableHover">
+        Enable hover tooltips
+      </label>
+    </div>
+    <div class="row">
+      <label>
+        Cache duration (minutes):
+        <input type="number" id="cacheMinutes" min="0" step="5" />
+      </label>
+      <div style="opacity:.7">Grades are cached per course to speed up repeated hovers.</div>
+    </div>
+    <button id="save">Save</button>
+    <span id="status" style="margin-left:8px; opacity:.7"></span>
+    <script src="options.js"></script>
+  </body>
+</html>
