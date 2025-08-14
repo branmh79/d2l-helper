@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Brightspace Helper – Phase 1",
+  "name": "D2L Helper",
   "version": "0.1.1",
-  "description": "Hover over a course card to see the current grade (UNG Brightspace).",
+  "description": "Hover over a course card to see the current grade, assignments, and what-if grades.",
   "permissions": ["storage"],
   "host_permissions": [
     "https://ung.view.usg.edu/*",
